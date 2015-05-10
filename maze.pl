@@ -27,6 +27,11 @@ inMaze([Y|X]) :-
 	>(Y,0).
 
 adjacent([Y1|X1], [Y2|X2]) :-
+	adjacent(Y1,Y2);
+	adjacent(X1,X2).
+	adjacent(Z1,Z2) :- Z2 is Z1 + 1. 
+	adjacent(Z1,Z2) :- Z2 is Z1 - 1. 
+	
 	
 	
 	 
