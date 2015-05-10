@@ -26,11 +26,12 @@ inMaze([Y|X]) :-
 	=<(Y,MY),
 	>(Y,0).
 
+%rubbish!!!!
 adjacent([Y1|X1], [Y2|X2]) :-
 	adjacent(Y1,Y2);
 	adjacent(X1,X2).
-	adjacent(Z1,Z2) :- Z2 is Z1 + 1. 
-	adjacent(Z1,Z2) :- Z2 is Z1 - 1. 
+	adjacent(A1,A2) :- A2 is A1 + 1. 
+	adjacent(B1,B2) :- B2 is B1 - 1. 
 	
 	
 	
